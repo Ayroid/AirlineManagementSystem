@@ -1,17 +1,10 @@
-#ifndef PASSENGER_H
-#define PASSENGER_H
+#include <iostream>
+#include "passenger.h"
 
-#include <string>
+Passenger::Passenger(const std::string& name, const std::string& passportNumber)
+    : name(name), passportNumber(passportNumber) {}
 
-class Passenger {
-public:
-    Passenger(const std::string& name, const std::string& passportNumber);
-
-    void displayPassengerInfo() const;
-
-private:
-    std::string name;
-    std::string passportNumber;
-};
-
-#endif
+void Passenger::displayPassengerInfo() const {
+    std::cout << "Name: " << name << "\n";
+    std::cout << "Passport Number: " << passportNumber << "\n";
+}
