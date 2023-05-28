@@ -13,6 +13,7 @@ public:
     void addPassenger(const Passenger& passenger);
     void displayFlightDetails() const;
     void displayPassengerDetails() const;
+    std::string getFlightNumber() const; // Added getFlightNumber() method
 
 private:
     std::string flightNumber;
@@ -25,4 +26,4 @@ private:
     std::vector<Passenger> passengers;
 };
 
-#endif
+#endif  // FLIGHT_H

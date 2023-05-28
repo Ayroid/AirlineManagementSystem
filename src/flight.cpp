@@ -26,3 +26,7 @@ void Flight::displayPassengerDetails() const {
         passenger.displayPassengerInfo();
     }
 }
+
+std::string Flight::getFlightNumber() const {
+    return flightNumber;
+}
